@@ -51,7 +51,7 @@ export default function Header() {
             role="navigation"
             aria-label="Menu principal"
         >
-            <div className="max-w-[1200px] mx-auto px-4 flex items-center justify-between h-[60px]">
+            <div className="max-w-[1100px] mx-auto px-4 flex items-center justify-between h-[60px]">
                 <button 
                     onClick={() => scrollToSection('home')}
                     className="text-2xl hover:text-gray-300 transition-colors"

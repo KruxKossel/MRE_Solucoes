@@ -26,7 +26,7 @@ const projects = [
 
 export function Projects() {
     return (
-        <AnimatedSection className="min-h-screen w-full flex flex-col items-center justify-center py-20 bg-gray-50" id="projetos">
+        <AnimatedSection className="min-h-screen w-full flex flex-col items-center justify-center py-20 bg-white" id="projetos">
             <AnimatedText className="font-bold text-2xl lg:text-3xl text-blue-950 mb-10 text-center" delay={0.2}>
                 Nossos Projetos
             </AnimatedText>

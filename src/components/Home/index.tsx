@@ -96,7 +96,7 @@ export default function Home() {
                 </div>
             </AnimatedSection>
 
-            <AnimatedSection className="min-h-screen w-full flex flex-col items-center justify-center py-20 bg-white" id="somos">
+            {/* <AnimatedSection className="min-h-screen w-full flex flex-col items-center justify-center py-20 bg-white" id="somos">
                 <AnimatedText className="font-bold text-2xl lg:text-3xl text-blue-950 mb-10" delay={0.2}>
                     Quem Somos?
                 </AnimatedText>
@@ -117,7 +117,7 @@ export default function Home() {
                         </p>
                     </AnimatedText>
                 </div>
-            </AnimatedSection>
+            </AnimatedSection> */}
 
             <Projects />
 
@@ -203,7 +203,7 @@ export default function Home() {
 
                             <Button 
                                 type="submit" 
-                                className="w-full md:w-auto"
+                                className="w-full"
                                 aria-label="Enviar mensagem"
                             >
                                 Enviar
