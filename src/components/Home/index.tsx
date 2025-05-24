@@ -52,7 +52,7 @@ export default function Home() {
                 </div>
             </AnimatedSection>
 
-            <AnimatedSection className=" w-full flex flex-col items-center justify-center bg-blue-800" id="servicosq">
+            <AnimatedSection className=" w-full flex flex-col items-center justify-center bg-blue-800" id="servicos">
                
                 <AnimatedText className="font-bold text-center text-2xl lg:text-3xl text-white p-10" delay={0.2}>
                     Seu tempo é valioso. <br />Cuide do que importa, e a gente resolve o resto.
