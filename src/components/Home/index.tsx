@@ -15,7 +15,7 @@ export default function Home() {
     return (
         <div className="flex flex-col items-center w-full bg-gray-50">
             <ToastContainer autoClose={3000} />
-            <AnimatedSection className="min-h-[calc(100vh-60px)] w-full flex flex-col items-center justify-start py-8" id="home">
+            <AnimatedSection className=" w-full flex flex-col items-center justify-start" id="home">
                 <div className="lg:flex justify-center w-[90%] max-w-[1200px] items-center mb-8">
                     <div className="flex flex-col text-justify max-w-[650px]">
                         <AnimatedText className="text-[33px] lg:text-[53px] text-start text-blue-950 font-bold" delay={0.2}>
@@ -35,12 +35,12 @@ export default function Home() {
                     </AnimatedImage>
                 </div>
 
-                <div className="w-full bg-white py-8">
+                <div className="w-full ">
                     <div className="w-[90%] max-w-[1200px] mx-auto">
                         <AnimatedText className="font-bold text-center text-2xl lg:text-3xl text-blue-950 mb-6" delay={0.2}>
                             Landing Pages Profissionais
                         </AnimatedText>
-                        <div className="lg:flex gap-8">
+                        <div className="lg:flex gap-8 mb-15">
                             <AnimatedSection className="w-full bg-white shadow-lg rounded-lg p-6 mb-6 lg:mb-0" delay={0.4}>
                                 Uma landing page bem estruturada foca no que realmente importa: transformar visitantes em clientes. Com design estratégico, chamada para ação clara e conteúdo objetivo, sua empresa ganha mais leads qualificados e aumenta as chances de venda.
                             </AnimatedSection>
@@ -52,12 +52,13 @@ export default function Home() {
                 </div>
             </AnimatedSection>
 
-            <AnimatedSection className="min-h-screen w-full flex flex-col items-center justify-center py-20" id="servicos">
-                <AnimatedText className="font-bold text-center text-2xl lg:text-3xl text-blue-950 mb-10" delay={0.2}>
+            <AnimatedSection className=" w-full flex flex-col items-center justify-center bg-blue-800" id="servicos">
+               
+                <AnimatedText className="font-bold text-center text-2xl lg:text-3xl text-white p-10" delay={0.2}>
                     Seu tempo é valioso. <br />Cuide do que importa, e a gente resolve o resto.
                 </AnimatedText>
-                <div className="w-[90%] max-w-[950px]">
-                    <AnimatedSection className="bg-white rounded-lg shadow-lg p-6" delay={0.4}>
+                <div className="w-[90%] max-w-[950px] mb-20">
+                    <AnimatedSection className="bg-gray-50 rounded-lg p-6" delay={0.4}>
                         <Accordion type="single" collapsible>
                             <AccordionItem value="item-1">
                                 <AccordionTrigger>Software sob medida</AccordionTrigger>
@@ -124,6 +125,7 @@ export default function Home() {
             <Projects />
 
             <AnimatedSection className="min-h-[calc(100vh-120px)] w-full flex flex-col items-center justify-center py-12 bg-gray-50" id="contato">
+               
                 <div className="w-[90%] max-w-[650px]">
                     <AnimatedText className="font-bold text-2xl lg:text-3xl text-blue-950 mb-6 text-center" delay={0.2}>
                         Contato
