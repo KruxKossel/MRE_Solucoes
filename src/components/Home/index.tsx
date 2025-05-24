@@ -9,10 +9,12 @@ import {
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
 import { Textarea } from "@/components/ui/textarea"
+import { ToastContainer, toast } from 'react-toastify';
 
 export default function Home() {
     return (
         <div className="flex flex-col items-center w-full bg-gray-50">
+            <ToastContainer autoClose={3000} />
             <AnimatedSection className="min-h-[calc(100vh-60px)] w-full flex flex-col items-center justify-start py-8" id="home">
                 <div className="lg:flex justify-center w-[90%] max-w-[1200px] items-center mb-8">
                     <div className="flex flex-col text-justify max-w-[650px]">
@@ -24,9 +26,9 @@ export default function Home() {
                         </AnimatedText>
                     </div>
                     <AnimatedImage className="flex items-center justify-center mt-8 lg:mt-0" delay={0.6}>
-                        <img 
-                            src="./Logo.png" 
-                            alt="Logo da empresa MRE Soluções" 
+                        <img
+                            src="./Logo.png"
+                            alt="Logo da empresa MRE Soluções"
                             className="w-[250px] lg:w-[350px]"
                             loading="eager"
                         />
@@ -127,13 +129,13 @@ export default function Home() {
                         Contato
                     </AnimatedText>
                     <AnimatedSection className="space-y-4 bg-white p-6 rounded-lg shadow-lg" delay={0.4}>
-                        <form 
+                        <form
                             onSubmit={(e) => {
                                 e.preventDefault()
                                 const formData = new FormData(e.currentTarget)
                                 const data = Object.fromEntries(formData)
                                 console.log('Dados do formulário:', data)
-                                alert('Mensagem enviada com sucesso!')
+                                toast.success('Mensagem enviada!')
                                 e.currentTarget.reset()
                             }}
                             className="space-y-4"
@@ -142,12 +144,12 @@ export default function Home() {
                                 <label htmlFor="nome" className="block text-sm font-medium text-gray-700">
                                     Nome Completo
                                 </label>
-                                <Input 
-                                    type="text" 
+                                <Input
+                                    type="text"
                                     id="nome"
                                     name="nome"
-                                    placeholder="Digite seu nome completo" 
-                                    className="w-full bg-white" 
+                                    placeholder="Digite seu nome completo"
+                                    className="w-full bg-white"
                                     required
                                     minLength={3}
                                     aria-label="Nome completo"
@@ -159,12 +161,12 @@ export default function Home() {
                                     <label htmlFor="email" className="block text-sm font-medium text-gray-700">
                                         Email
                                     </label>
-                                    <Input 
-                                        type="email" 
+                                    <Input
+                                        type="email"
                                         id="email"
                                         name="email"
-                                        placeholder="Digite seu email" 
-                                        className="w-full bg-white" 
+                                        placeholder="Digite seu email"
+                                        className="w-full bg-white"
                                         required
                                         aria-label="Email para contato"
                                     />
@@ -173,12 +175,12 @@ export default function Home() {
                                     <label htmlFor="telefone" className="block text-sm font-medium text-gray-700">
                                         Telefone
                                     </label>
-                                    <Input 
-                                        type="tel" 
+                                    <Input
+                                        type="tel"
                                         id="telefone"
                                         name="telefone"
-                                        placeholder="Digite seu telefone" 
-                                        className="w-full bg-white" 
+                                        placeholder="Digite seu telefone"
+                                        className="w-full bg-white"
                                         required
                                         pattern="[0-9]{10,11}"
                                         aria-label="Telefone para contato"
@@ -190,9 +192,9 @@ export default function Home() {
                                 <label htmlFor="mensagem" className="block text-sm font-medium text-gray-700">
                                     Mensagem
                                 </label>
-                                <Textarea 
+                                <Textarea
                                     id="mensagem"
-                                    placeholder="Digite sua mensagem" 
+                                    placeholder="Digite sua mensagem"
                                     className="w-full h-24 bg-white"
                                     name="mensagem"
                                     required
@@ -201,8 +203,8 @@ export default function Home() {
                                 />
                             </div>
 
-                            <Button 
-                                type="submit" 
+                            <Button
+                                type="submit"
                                 className="w-full"
                                 aria-label="Enviar mensagem"
                             >
