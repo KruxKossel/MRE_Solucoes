@@ -134,8 +134,18 @@ export default function Home() {
                                 e.preventDefault()
                                 const formData = new FormData(e.currentTarget)
                                 const data = Object.fromEntries(formData)
-                                console.log('Dados do formulário:', data)
-                                toast.success('Mensagem enviada!')
+
+                                const mensagem = `Novo formulário recebido:
+*Nome:* ${data.nome}
+*Email:* ${data.email}
+*Telefone:* ${data.telefone}
+*Mensagem:* ${data.mensagem}`
+
+                                const mensagemCodificada = encodeURIComponent(mensagem)
+                                const numero = '5516993696126'
+                                const url = `https://wa.me/${numero}?text=${mensagemCodificada}`
+                                window.open(url, '_blank')
+                                toast.success('Mensagem enviada !')
                                 e.currentTarget.reset()
                             }}
                             className="space-y-4"
