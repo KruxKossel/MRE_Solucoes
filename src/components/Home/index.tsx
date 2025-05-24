@@ -15,7 +15,7 @@ export default function Home() {
     return (
         <div className="flex flex-col items-center w-full bg-gray-50">
             <ToastContainer autoClose={3000} />
-            <AnimatedSection className=" w-full flex flex-col items-center justify-start" id="home">
+            <AnimatedSection className=" mt-5 w-full flex flex-col items-center justify-start" id="home">
                 <div className="lg:flex justify-center w-[90%] max-w-[1200px] items-center mb-8">
                     <div className="flex flex-col text-justify max-w-[650px]">
                         <AnimatedText className="text-[33px] lg:text-[53px] text-start text-blue-950 font-bold" delay={0.2}>
@@ -52,7 +52,7 @@ export default function Home() {
                 </div>
             </AnimatedSection>
 
-            <AnimatedSection className=" w-full flex flex-col items-center justify-center bg-blue-800" id="servicos">
+            <AnimatedSection className=" w-full flex flex-col items-center justify-center bg-blue-800" id="servicosq">
                
                 <AnimatedText className="font-bold text-center text-2xl lg:text-3xl text-white p-10" delay={0.2}>
                     Seu tempo é valioso. <br />Cuide do que importa, e a gente resolve o resto.

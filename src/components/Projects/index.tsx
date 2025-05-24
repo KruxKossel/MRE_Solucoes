@@ -28,7 +28,7 @@ export function Projects() {
     return (
         <>
             <img src="./Vector.png" alt="" className="w-[100%]" />
-            <AnimatedSection className="w-full flex flex-col items-center justify-cente" id="projetos">
+            <AnimatedSection className="mt-5 w-full flex flex-col items-center justify-cente" id="projetos">
                 <AnimatedText className="font-bold text-2xl lg:text-3xl text-blue-950 mb-10 text-center" delay={0.2}>
                     Nossos Projetos
                 </AnimatedText>
