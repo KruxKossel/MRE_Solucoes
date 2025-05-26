@@ -50,11 +50,43 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
+
+                <AnimatedSection className="flex flex-col lg:flex-row lg:justify-between items-center w-[90%] max-w-[1200px]" delay={0.6}>
+                    <div className="p-5 flex flex-col gap-5 w-[100%]">
+
+                        <div className="p-2 text-center text-[20px] max-w-[600px] h-13 lg:text-2xl font-bold text-white bg-blue-900 rounded">
+                            Design 100% adaptado ao seu negócio !
+                        </div>
+
+                        <div className="p-2 text-center h-13 text-[20px] max-w-[600px] lg:text-2xl font-bold text-white bg-blue-800 rounded">
+                            Impulsione sua presença no mercado !
+
+                        </div>
+
+                        <div className="p-2 mb-[80px] text-center h-13  text-[17px] max-w-[600px] lg:text-2xl font-bold text-white bg-blue-700 rounded">
+                            Paginas responsivas em qualquer dispositivo.
+
+                        </div>
+
+                    </div>
+                    <div>
+                        <img
+                            src="./person.png"
+                            alt="Imagem da pessoa"
+                            className="w-[450px] max-w-[650px] mr-[50px] mb-[-35px]"
+                            loading="eager"
+                        />
+                    </div>
+                </AnimatedSection>
+
+
+
+                <AnimatedText className="mb-[-25px]"> <button className="w-[300px] h-[50px] bg-green-500 text-2xl rounded relative hover:bg-green-600 text-white font-bold">Faça seu orçamento! </button></AnimatedText>
             </AnimatedSection>
 
-            <AnimatedSection className=" w-full flex flex-col items-center justify-center bg-blue-800" id="servicos">
-               
-                <AnimatedText className="font-bold text-center text-2xl lg:text-3xl text-white p-10" delay={0.2}>
+            <div className=" w-full flex flex-col items-center justify-center bg-blue-800" id="servicos">
+
+                <AnimatedText className="font-bold text-center text-2xl lg:text-3xl text-white p-20" delay={0.2}>
                     Seu tempo é valioso. <br />Cuide do que importa, e a gente resolve o resto.
                 </AnimatedText>
                 <div className="w-[90%] max-w-[950px] mb-20">
@@ -97,7 +129,7 @@ export default function Home() {
                         </Accordion>
                     </AnimatedSection>
                 </div>
-            </AnimatedSection>
+            </div>
 
             {/* <AnimatedSection className="min-h-screen w-full flex flex-col items-center justify-center py-20 bg-white" id="somos">
                 <AnimatedText className="font-bold text-2xl lg:text-3xl text-blue-950 mb-10" delay={0.2}>
@@ -125,7 +157,7 @@ export default function Home() {
             <Projects />
 
             <AnimatedSection className="min-h-[calc(100vh-120px)] w-full flex flex-col items-center justify-center py-12 bg-gray-50" id="contato">
-               
+
                 <div className="w-[90%] max-w-[650px]">
                     <AnimatedText className="font-bold text-2xl lg:text-3xl text-blue-950 mb-6 text-center" delay={0.2}>
                         Contato
