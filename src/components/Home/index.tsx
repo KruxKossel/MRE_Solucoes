@@ -55,16 +55,16 @@ export default function Home() {
                     <div className="p-5 flex flex-col gap-5 w-[100%]">
 
                         <div className="p-2 text-center text-[20px] max-w-[600px] h-13 lg:text-2xl font-bold text-white bg-blue-900 rounded">
-                            Design 100% adaptado ao seu negócio !
+                            Design 100% personalizado!
                         </div>
 
                         <div className="p-2 text-center h-13 text-[20px] max-w-[600px] lg:text-2xl font-bold text-white bg-blue-800 rounded">
-                            Impulsione sua presença no mercado !
+                            Impulsione sua marca!
 
                         </div>
 
-                        <div className="p-2 mb-[80px] text-center h-13  text-[17px] max-w-[600px] lg:text-2xl font-bold text-white bg-blue-700 rounded">
-                            Paginas responsivas em qualquer dispositivo.
+                        <div className="p-2 mb-[80px] text-center h-13  text-[20px] max-w-[600px] lg:text-2xl font-bold text-white bg-blue-700 rounded">
+                            Paginas 100% responsivas.
 
                         </div>
 
