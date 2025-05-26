@@ -73,7 +73,7 @@ export default function Home() {
                         <img
                             src="./person.png"
                             alt="Imagem da pessoa"
-                            className="w-[390px] max-w-[650px] mr-[50px] mb-[-35px]"
+                            className="w-[390px] max-w-[650px] mr-[50px] mb-[-25px] lg:mb-[-75px]"
                             loading="eager"
                         />
                     </div>
