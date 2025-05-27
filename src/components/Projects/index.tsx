@@ -8,18 +8,18 @@ import "swiper/css/pagination"
 
 const projects = [
     {
-        title: "Projeto 1",
-        description: "Descrição do projeto 1",
+        title: "Página do Hortifruti",
+        description: "Landing page de apresentação dos produtos frescos, informações sobre a localização, video demonstrativo.",
         image: "./projeto1.png"
     },
     {
-        title: "Projeto 2",
-        description: "Descrição do projeto 2",
+        title: "Catálogo de Produtos",
+        description: "Landing page com todos os produtos cadastrados para facilitar a visualização, navegação e escolha do cliente.",
         image: "./projeto2.png"
     },
     {
-        title: "Projeto 3",
-        description: "Descrição do projeto 3",
+        title: "Plantech",
+        description: "Software de gerenciamento de fazendas urbanas, desenvolvido para facilitar o controle e organização das atividades agrícolas em um ambiente urbano. ",
         image: "./projeto3.png"
     }
 ]
