@@ -32,27 +32,26 @@ export default function Header() {
     const menuItems = [
         { id: 'home', label: 'Home', ariaLabel: 'Ir para a seção inicial' },
         { id: 'servicos', label: 'Serviços', ariaLabel: 'Ir para a seção de serviços' },
-        { id: 'somos', label: 'Sobre', ariaLabel: 'Ir para a seção sobre nós' },
         { id: 'projetos', label: 'Projetos', ariaLabel: 'Ir para a seção de projetos' },
+        { id: 'somos', label: 'Sobre', ariaLabel: 'Ir para a seção sobre nós' },
         { id: 'contato', label: 'Contato', ariaLabel: 'Ir para a seção de contato' }
     ];
 
     return (
-        <nav 
-            className={`fixed top-0 left-0 w-full text-white font-bold z-50 transition-all duration-300 ${
-                isScrolled 
-                    ? isHovered 
-                        ? 'bg-blue-900' 
+        <nav
+            className={`fixed top-0 left-0 w-full text-white font-bold z-50 transition-all duration-300 ${isScrolled
+                    ? isHovered
+                        ? 'bg-blue-900'
                         : 'bg-blue-900/80 backdrop-blur-sm'
                     : 'bg-blue-900'
-            }`}
+                }`}
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
             role="navigation"
             aria-label="Menu principal"
         >
             <div className="max-w-[1100px] mx-auto px-4 flex items-center justify-between h-[60px]">
-                <button 
+                <button
                     onClick={() => scrollToSection('home')}
                     className="text-2xl hover:text-gray-300 transition-colors"
                     aria-label="Ir para o início da página"
@@ -98,7 +97,7 @@ export default function Header() {
                 <ul className="hidden lg:flex space-x-6 text-lg" role="menubar">
                     {menuItems.map((item) => (
                         <li key={item.id} role="none">
-                            <button 
+                            <button
                                 onClick={() => scrollToSection(item.id)}
                                 className="hover:text-gray-300 cursor-pointer transition-colors"
                                 role="menuitem"
@@ -112,7 +111,7 @@ export default function Header() {
             </div>
 
             {isOpen && (
-                <div 
+                <div
                     className="lg:hidden px-4 pb-4 bg-blue-900"
                     id="mobile-menu"
                     role="menu"
@@ -120,7 +119,7 @@ export default function Header() {
                     <ul className="flex flex-col space-y-2 text-lg text-center">
                         {menuItems.map((item) => (
                             <li key={item.id} role="none">
-                                <button 
+                                <button
                                     onClick={() => scrollToSection(item.id)}
                                     className="w-full py-2 hover:text-white hover:bg-blue-800 cursor-pointer transition-colors"
                                     role="menuitem"
@@ -134,5 +133,5 @@ export default function Header() {
                 </div>
             )}
         </nav>
-    );
+    )
 }
