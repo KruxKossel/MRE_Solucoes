@@ -50,10 +50,10 @@ export default function Header() {
             role="navigation"
             aria-label="Menu principal"
         >
-            <div className="max-w-[1100px] mx-auto px-4 flex items-center justify-between h-[60px]">
+            <div className="w-[90%] max-w-[1200px] mx-auto flex items-center justify-between h-[60px]">
                 <button
                     onClick={() => scrollToSection('home')}
-                    className="text-2xl hover:text-gray-300 transition-colors"
+                    className="text-lg sm:text-xl md:text-2xl hover:text-gray-300 transition-colors"
                     aria-label="Ir para o início da página"
                 >
                     MRE Soluções
@@ -62,7 +62,7 @@ export default function Header() {
                 <div className="lg:hidden">
                     <button
                         onClick={() => setIsOpen(!isOpen)}
-                        className="focus:outline-none"
+                        className="focus:outline-none p-2"
                         aria-expanded={isOpen}
                         aria-controls="mobile-menu"
                         aria-label={isOpen ? "Fechar menu" : "Abrir menu"}
@@ -112,16 +112,16 @@ export default function Header() {
 
             {isOpen && (
                 <div
-                    className="lg:hidden px-4 pb-4 bg-blue-900"
+                    className="lg:hidden px-4 pb-4 bg-blue-900 absolute top-[60px] w-full shadow-lg"
                     id="mobile-menu"
                     role="menu"
                 >
-                    <ul className="flex flex-col space-y-2 text-lg text-center">
+                    <ul className="flex flex-col space-y-4 sm:space-y-6 text-lg text-center">
                         {menuItems.map((item) => (
                             <li key={item.id} role="none">
                                 <button
                                     onClick={() => scrollToSection(item.id)}
-                                    className="w-full py-2 hover:text-white hover:bg-blue-800 cursor-pointer transition-colors"
+                                    className="w-full sm:w-auto py-2 hover:text-white hover:bg-blue-800 cursor-pointer transition-colors"
                                     role="menuitem"
                                     aria-label={item.ariaLabel}
                                 >

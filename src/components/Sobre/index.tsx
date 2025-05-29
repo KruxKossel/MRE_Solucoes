@@ -1,8 +1,7 @@
-
 import { AnimatedSection, AnimatedText, AnimatedImage } from "../ui/animated-section"
 export default function Sobre() {
     return (
-        <AnimatedSection className="mt-10 lg:p-20  w-[90%] flex flex-col items-center justify-center" id="somos">
+        <AnimatedSection className="mt-10 lg:p-20 pt-20 w-[90%] flex flex-col items-center justify-center" id="somos">
             <AnimatedText className="font-bold text-2xl lg:text-3xl text-blue-950 mb-10" delay={0.2}>
                 Quem Somos?
             </AnimatedText>
