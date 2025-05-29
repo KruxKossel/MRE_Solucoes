@@ -1,7 +1,7 @@
 export default function Footer() {
     return (
         <footer className="w-full bg-blue-900 text-white py-8 mt-auto" role="contentinfo">
-            <div className="max-w-[1200px] mx-auto px-4">
+            <div className="w-[90%] max-w-[1200px] mx-auto">
                 <div className="flex flex-col md:flex-row justify-between items-center gap-4">
                     <p>© 2025 MRE Soluções. Todos os direitos reservados.</p>
                     

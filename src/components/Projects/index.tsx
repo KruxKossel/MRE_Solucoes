@@ -26,9 +26,9 @@ const projects = [
 
 export function Projects() {
     return (
-        <>
+        <div className="w-full bg-gray-50">
             <img src="./Vector.png" alt="" className="w-[100%]" />
-            <AnimatedSection className="mt-5 w-full flex flex-col items-center justify-cente" id="projetos">
+            <AnimatedSection className="w-full flex flex-col items-center justify-center pt-20 pb-20 md:pb-32" id="projetos">
                 <AnimatedText className="font-bold text-2xl lg:text-3xl text-blue-950 mb-10 text-center" delay={0.2}>
                     Nossos Projetos
                 </AnimatedText>
@@ -38,7 +38,11 @@ export function Projects() {
                         spaceBetween={20}
                         slidesPerView={1}
                         navigation
-                        pagination={{ clickable: true }}
+                        pagination={{ 
+                            clickable: true,
+                            el: '.swiper-pagination',
+                            type: 'bullets'
+                        }}
                         autoplay={{
                             delay: 5000,
                             disableOnInteraction: false
@@ -86,9 +90,9 @@ export function Projects() {
                             </SwiperSlide>
                         ))}
                     </Swiper>
+                    <div className="swiper-pagination !bottom-0"></div>
                 </div>
             </AnimatedSection>
-        </>
-
+        </div>
     )
 } 
